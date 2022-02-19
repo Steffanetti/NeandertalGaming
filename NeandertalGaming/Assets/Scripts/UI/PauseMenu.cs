@@ -11,9 +11,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject level;
 
     public void Pause() {
-        pauseMenu.SetActive(true);
-        actualScore.GetComponent<Text>().text = "Actual Score : " + ScoreUpdater.orbScore;
         Time.timeScale = 0f;
+        pauseMenu.SetActive(true);
+        SaveManager.Instance.Load();
+        actualScore.GetComponent<Text>().text = "Actual Score : " + ScoreUpdater.orbScore;
+        bestScore.GetComponent<Text>().text = "Best Score : " + SaveManager.Instance.state.bestScore;
+        level.GetComponent<Text>().text = "Level : " + SaveManager.Instance.state.level;
     }
 
     public void resume() {

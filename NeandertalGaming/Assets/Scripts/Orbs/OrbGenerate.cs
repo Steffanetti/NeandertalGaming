@@ -14,7 +14,12 @@ public class OrbGenerate : MonoBehaviour
         if (genOrb == false) {
             genOrb = true;
             orbLoc = Random.Range(1, 4);
-            orbCol = Random.Range(0, 3);
+            SaveManager.Instance.Load();
+            if (SaveManager.Instance.state.level == 1) {
+                orbCol = Random.Range(0, 2);
+            } else {
+                orbCol = Random.Range(0, 3);
+            }
             if (orbLoc == 1) {
                 xPos = -1.5f;
             } else if (orbLoc == 2) {

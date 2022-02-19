@@ -2388,9 +2388,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1293886473}
-  actualScore: {fileID: 0}
-  bestScore: {fileID: 0}
-  level: {fileID: 0}
+  actualScore: {fileID: 634744452}
+  bestScore: {fileID: 1117432668}
+  level: {fileID: 204947196}
 --- !u!114 &933515597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2802,8 +2802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 18.335}
-  m_SizeDelta: {x: 222.39484, y: 36.669434}
+  m_AnchoredPosition: {x: -34.74, y: -72.33}
+  m_SizeDelta: {x: 305.8692, y: 217.99626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1046901729
 Animator:
